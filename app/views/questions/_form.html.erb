@@ -23,7 +23,7 @@
   </div>
   <div class="field">
     <%= f.label :category_id %><br />
-    <%= f.collection_select(:category_id, Question.all, :categories, :id) %>
+    <%= f.collection_select(:category_id, Question.all, :id, :category_id) %>
   </div>
   <div class="actions">
     <%= f.submit %>
