@@ -23,7 +23,7 @@
   </div>
   <div class="field">
     <%= f.label :category %><br />
-    <%= f.collection_select(:category, Question.all, :id, :categories) %>
+    <%= f.collection_select(:category, Survey::survey_sections, :id, :categories) %>
   </div>
 
   <%= f.fields_for :answers do |builder| %>
